@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber Security Workshop - Master Ethical Hacking</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                        <path d="M20 5L8 11V18C8 26 12 33 20 35C28 33 32 26 32 18V11L20 5Z" fill="#00ff88" stroke="#00ff88" stroke-width="2"/>
+                        <path d="M20 15V25M15 20H25" stroke="#0a0e27" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                    <span>CyberShield Workshop</span>
+                </div>
+                <button class="register-btn" onclick="scrollToForm()">Register Free</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-background">
+            <div class="grid-overlay"></div>
+            <div class="glow-orb orb-1"></div>
+            <div class="glow-orb orb-2"></div>
+            <div class="glow-orb orb-3"></div>
+        </div>
+        
+        <div class="container">
+            <div class="hero-wrapper">
+                <div class="hero-left">
+                    <div class="hero-badge">
+                        <span class="badge-dot"></span>
+                        <span>🔥 Live Workshop - Limited Seats</span>
+                    </div>
+                    
+                    <h1 class="hero-title">
+                        Become a
+                        <span class="gradient-text">Cyber Security</span>
+                        Expert
+                    </h1>
+                    
+                    <p class="hero-description">
+                        Master ethical hacking, penetration testing, and network security in one intensive day. 
+                        Learn from industry experts and get hands-on experience with real-world scenarios.
+                    </p>
+                    
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">500+</div>
+                            <div class="stat-label">Students Trained</div>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat-item">
+                            <div class="stat-number">4.9/5</div>
+                            <div class="stat-label">Average Rating</div>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat-item">
+                            <div class="stat-number">7 Hrs</div>
+                            <div class="stat-label">Intensive Training</div>
+                        </div>
+                    </div>
+                    
+                    <div class="hero-cta">
+                        <button class="cta-primary" onclick="scrollToForm()">
+                            <span>Register Now - ₹1000</span>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M7 3L14 10L7 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                        <button class="cta-secondary" onclick="document.querySelector('.about').scrollIntoView({behavior: 'smooth'})">
+                            <span>Learn More</span>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="hero-right">
+                    <div class="info-cards">
+                        <div class="info-card card-date">
+                            <div class="card-header">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <rect x="3" y="4" width="18" height="18" rx="2" stroke="currentColor" stroke-width="2"/>
+                                    <line x1="3" y1="10" x2="21" y2="10" stroke="currentColor" stroke-width="2"/>
+                                    <line x1="8" y1="2" x2="8" y2="6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                    <line x1="16" y1="2" x2="16" y2="6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                </svg>
+                                <span>Workshop Date</span>
+                            </div>
+                            <div class="card-content">
+                                <div class="card-title">December 15, 2025</div>
+                                <div class="card-subtitle">10:00 AM - 5:00 PM IST</div>
+                            </div>
+                        </div>
+                        
+                        <div class="info-card card-mode">
+                            <div class="card-header">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2"/>
+                                    <path d="M12 2C12 2 15 5 15 12C15 19 12 22 12 22M12 2C12 2 9 5 9 12C9 19 12 22 12 22M2 12H22" stroke="currentColor" stroke-width="2"/>
+                                </svg>
+                                <span>Workshop Mode</span>
+                            </div>
+                            <div class="card-content">
+                                <div class="card-title">100% Online</div>
+                                <div class="card-subtitle">Join from anywhere via Zoom</div>
+                            </div>
+                        </div>
+                        
+                        <div class="info-card card-price">
+                            <div class="card-header">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2"/>
+                                    <path d="M12 6V12L16 14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                </svg>
+                                <span>Special Offer</span>
+                            </div>
+                            <div class="card-content">
+                                <div class="card-title">₹1000 Only</div>
+                                <div class="card-subtitle"><s>₹2500</s> Early bird discount</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tech-stack">
+                        <div class="tech-item">Kali Linux</div>
+                        <div class="tech-item">Metasploit</div>
+                        <div class="tech-item">Burp Suite</div>
+                        <div class="tech-item">Wireshark</div>
+                        <div class="tech-item">Nmap</div>
+                        <div class="tech-item">OWASP</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about">
+        <div class="container">
+            <h2 class="section-title">About The Workshop</h2>
+            <p class="section-subtitle">Comprehensive training designed for beginners and professionals</p>
+            
+            <div class="about-grid">
+                <div class="about-card">
+                    <div class="about-icon">🎯</div>
+                    <h3>What You'll Learn</h3>
+                    <ul>
+                        <li>Fundamentals of Cyber Security</li>
+                        <li>Network Penetration Testing</li>
+                        <li>Web Application Security</li>
+                        <li>Malware Analysis Basics</li>
+                        <li>Security Tools & Frameworks</li>
+                        <li>Real-world Attack Scenarios</li>
+                    </ul>
+                </div>
+                
+                <div class="about-card">
+                    <div class="about-icon">👨‍🏫</div>
+                    <h3>Expert Instructors</h3>
+                    <ul>
+                        <li>Industry professionals with 10+ years experience</li>
+                        <li>Certified Ethical Hackers (CEH)</li>
+                        <li>Real-world cybersecurity experts</li>
+                        <li>Hands-on teaching methodology</li>
+                        <li>Interactive Q&A sessions</li>
+                        <li>Post-workshop support</li>
+                    </ul>
+                </div>
+                
+                <div class="about-card">
+                    <div class="about-icon">🏆</div>
+                    <h3>What You'll Get</h3>
+                    <ul>
+                        <li>Certificate of Completion</li>
+                        <li>Workshop materials & resources</li>
+                        <li>Access to recorded sessions</li>
+                        <li>Exclusive community access</li>
+                        <li>Career guidance & mentorship</li>
+                        <li>Practical lab exercises</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Registration Form Section -->
+    <section class="registration" id="registration-form">
+        <div class="container">
+            <div class="form-wrapper">
+                <div class="form-header">
+                    <h2>Register for the Workshop</h2>
+                    <p>Fill in your details to secure your seat</p>
+                </div>
+                
+                <form id="registrationForm" class="registration-form">
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Phone Number *</label>
+                        <input type="tel" id="phone" name="phone" placeholder="+91 XXXXX XXXXX" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="city">City *</label>
+                        <input type="text" id="city" name="city" placeholder="Enter your city" required>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">
+                        Submit Registration
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M7 3L14 10L7 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comparison Section -->
+    <section class="comparison">
+        <div class="container">
+            <h2 class="section-title">Why Choose Our Workshop?</h2>
+            <p class="section-subtitle">See how we stand out from the rest</p>
+            
+            <div class="comparison-table">
+                <div class="comparison-header">
+                    <div class="feature-col">Features</div>
+                    <div class="other-col">Other Workshops</div>
+                    <div class="our-col">Our Workshop</div>
+                </div>
+                
+                <div class="comparison-row">
+                    <div class="feature-col">
+                        <strong>Hands-on Practice</strong>
+                    </div>
+                    <div class="other-col">
+                        <span class="cross">✗</span>
+                        <span>Theory only</span>
+                    </div>
+                    <div class="our-col">
+                        <span class="check">✓</span>
+                        <span>Live labs & exercises</span>
+                    </div>
+                </div>
+                
+                <div class="comparison-row">
+                    <div class="feature-col">
+                        <strong>Industry Experts</strong>
+                    </div>
+                    <div class="other-col">
+                        <span class="cross">✗</span>
+                        <span>General instructors</span>
+                    </div>
+                    <div class="our-col">
+                        <span class="check">✓</span>
+                        <span>10+ years experience</span>
+                    </div>
+                </div>
+                
+                <div class="comparison-row">
+                    <div class="feature-col">
+                        <strong>Certificate</strong>
+                    </div>
+                    <div class="other-col">
+                        <span class="cross">✗</span>
+                        <span>Generic certificate</span>
+                    </div>
+                    <div class="our-col">
+                        <span class="check">✓</span>
+                        <span>Industry-recognized</span>
+                    </div>
+                </div>
+                
+                <div class="comparison-row">
+                    <div class="feature-col">
+                        <strong>Post-Workshop Support</strong>
+                    </div>
+                    <div class="other-col">
+                        <span class="cross">✗</span>
+                        <span>No support</span>
+                    </div>
+                    <div class="our-col">
+                        <span class="check">✓</span>
+                        <span>30-day support</span>
+                    </div>
+                </div>
+                
+                <div class="comparison-row">
+                    <div class="feature-col">
+                        <strong>Recorded Sessions</strong>
+                    </div>
+                    <div class="other-col">
+                        <span class="cross">✗</span>
+                        <span>Not available</span>
+                    </div>
+                    <div class="our-col">
+                        <span class="check">✓</span>
+                        <span>Lifetime access</span>
+                    </div>
+                </div>
+                
+                <div class="comparison-row">
+                    <div class="feature-col">
+                        <strong>Price</strong>
+                    </div>
+                    <div class="other-col">
+                        <span class="price-high">₹2500+</span>
+                    </div>
+                    <div class="our-col">
+                        <span class="price-low">₹1000 only</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="advantages">
+                <h3>Key Advantages</h3>
+                <div class="advantages-grid">
+                    <div class="advantage-item">
+                        <div class="advantage-icon">⚡</div>
+                        <div>
+                            <h4>Practical Approach</h4>
+                            <p>70% hands-on exercises with real-world scenarios</p>
+                        </div>
+                    </div>
+                    <div class="advantage-item">
+                        <div class="advantage-icon">🌟</div>
+                        <div>
+                            <h4>Career Boost</h4>
+                            <p>Industry-recognized certification to enhance your resume</p>
+                        </div>
+                    </div>
+                    <div class="advantage-item">
+                        <div class="advantage-icon">🤝</div>
+                        <div>
+                            <h4>Community Access</h4>
+                            <p>Join exclusive network of cybersecurity professionals</p>
+                        </div>
+                    </div>
+                    <div class="advantage-item">
+                        <div class="advantage-icon">💰</div>
+                        <div>
+                            <h4>Best Value</h4>
+                            <p>Premium content at an affordable price point</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <p class="section-subtitle">Got questions? We've got answers</p>
+            
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Do I need prior programming knowledge?</span>
+                        <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="faq-answer">
+                        <p>No, this workshop is designed for both beginners and professionals. We'll cover basics and gradually move to advanced topics. Basic computer knowledge is sufficient to get started.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Will I get a certificate?</span>
+                        <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes! Upon successful completion of the workshop, you'll receive an industry-recognized certificate that you can add to your resume and LinkedIn profile.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>What software/tools do I need?</span>
+                        <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="faq-answer">
+                        <p>You'll need a laptop/computer with internet connection. We'll provide detailed setup instructions before the workshop, including all required software and tools (most are free and open-source).</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Can I access the workshop materials after it ends?</span>
+                        <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Absolutely! You'll get lifetime access to recorded sessions, all workshop materials, resources, and documentation. You can review them anytime at your own pace.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Is this workshop suitable for working professionals?</span>
+                        <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes! The workshop is scheduled on a weekend (Saturday) to accommodate working professionals. The online format also provides flexibility to learn from anywhere.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>What is the refund policy?</span>
+                        <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We offer a 100% money-back guarantee if you're not satisfied within the first hour of the workshop. No questions asked!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fixed Footer -->
+    <div class="fixed-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <div class="footer-price">
+                        <span class="price-label">Only</span>
+                        <span class="price-value">₹1000</span>
+                    </div>
+                    <div class="footer-seats">
+                        <span class="seats-icon">🔥</span>
+                        <span>Limited seats remaining!</span>
+                    </div>
+                </div>
+                <button class="reserve-btn" onclick="scrollToForm()">
+                    Reserve My Seat
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M5 10H15M15 10L10 5M15 10L10 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
